@@ -1,0 +1,52 @@
+/* static/styles.css */
+
+body {
+    background-color: #f4f1de;
+    font-family: Arial, sans-serif;
+    color: #3d405b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #e07a5f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #f2cc8f;
+}
+
+.microphone-button {
+    background-color: #81b29a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.microphone-button:hover {
+    background-color: #f2cc8f;
+}
+
+button {
+    background-color: #81b29a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f2cc8f;
+}

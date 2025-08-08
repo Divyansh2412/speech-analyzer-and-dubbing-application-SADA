@@ -1,0 +1,28 @@
+<!-- templates/result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>English Translation</h1>
+        <p>{{ text }}</p>
+        <form action="/translate" method="POST">
+            <input type="hidden" name="text" value="{{ text }}">
+            <label for="language">Select Language:</label>
+            <select name="language" id="language">
+                {% for lang, code in languages.items() %}
+                <option value="{{ code }}">{{ lang }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <button type="submit">Translate and Listen</button>
+        </form>
+    </div>
+</body>
+</html>
