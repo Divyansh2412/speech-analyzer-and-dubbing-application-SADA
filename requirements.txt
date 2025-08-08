@@ -1,0 +1,9 @@
+speechrecognition
+pydub
+gtts
+pyaudio
+googletrans==4.0.0-rc1
+numpy
+scipy
+librosa
+flask
